@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="CSS/style.css" /> -->
   </head>
   <body>
+    
     <header class="intro-hdr">
+      <nav>
+        <h2>Navigatie</h2>
+        <ul>
+          <li><a href="#hobbies-sect">Hobbies</a></li>
+          <li><a href="#music-sect">Muziek</a></li>
+          <li><a href="#pet-sect">Huisdieren</a></li>
+        </ul>
+      </nav>
       <h1><b>Mikael Cornelis</b></h1>
       <div class="intro-hdr-div">
         <p>17 jaar oud</p>
@@ -24,7 +32,6 @@
         </div>
         <div class="location-iframe">
           <iframe
-            alt="Google Maps - Sterrebeek"
             class="maps-sterrebeek"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40292.11044995719!2d4.487169809451249!3d50.86344352665641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dc18c1dad789%3A0xe0cde7c7dfc686f7!2sSterrebeek%2C%20Zaventem!5e0!3m2!1snl!2sbe!4v1790605603617!5m2!1snl!2sbe"
             width="600"
@@ -36,7 +43,7 @@
           ></iframe>
         </div>
       </section>
-      <section class="hobbies-sect">
+      <section id="hobbies-sect" class="hobbies-sect">
         <div class="hobbies-div">
           <h2>Mijn hobbies</h2>
           <p>Er zijn meerdere dingen die ik graag doe in mijn vrije tijd</p>
@@ -97,7 +104,7 @@
           </li>
         </ol>
       </section>
-      <section class="music-sect">
+      <section id="music-sect" class="music-sect">
         <h2>Mijn muzieksmaak</h2>
         <ul>
           <li>
@@ -107,7 +114,6 @@
             </p>
             <!-- Spotify embed Tyler The Creator - See You Again -->
             <iframe
-              alt="Tyler The Creator - See You Again"
               data-testid="embed-iframe"
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/track/7KA4W4McWYRpgf0fWsJZWB?utm_source=generator&si=77073522c4694be0"
@@ -133,7 +139,6 @@
             <p>dus ik ga nog een paar nummers opnoemen</p>
             <!-- you never give me your money -->
             <iframe
-              alt="The Beatles - You Never Give Me Your Money"
               data-testid="embed-iframe"
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/track/1jOLTO379yIu9aMnCkpMQl?utm_source=generator&si=707509f884ab4104"
@@ -152,7 +157,6 @@
             ></iframe>
             <!-- i saw her standing there -->
             <iframe
-              alt="The Beatles - I Saw Her Standing There"
               data-testid="embed-iframe"
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/track/3KiexfmhxHvG5IgAElmTkd?utm_source=generator&si=cc156ed86b7e40bf"
@@ -171,10 +175,9 @@
             ></iframe>
             <!-- silver lining -->
             <iframe
-              alt="Laufey - Silver Lining"
               data-testid="embed-iframe"
               style="border-radius: 12px"
-              src="https://open.spotify.com/embed/artist/7gW0r5CkdEUMm42w9XpyZO?utm_source=generator&si=0dcd6fbced6b43e4"
+              src="https://open.spotify.com/embed/track/4kfXaAAZlfBrimPJYHlCEM?utm_source=generator&si=77385826e32749ee"
               width="100%"
               height="352"
               frameborder="0"
@@ -190,7 +193,6 @@
             ></iframe>
             <!-- loose -->
             <iframe
-              alt="Daniel Caesar - Loose"
               data-testid="embed-iframe"
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/track/3xqWiKFFYF9Pv7H1nNoZFd?utm_source=generator&si=0f04ea39a75a4ad1"
@@ -237,10 +239,9 @@
         </p>
         <!-- EMBED GOOGLE MAPS MINIEMEN -->
         <iframe
-          alt="Google Maps - Miniemeninstituut"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1248.9147928799582!2d4.707706769639789!3d50.88153245267638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c160d3fdfbf33f%3A0x3860177c2547ac92!2sMiniemeninstituut!5e0!3m2!1snl!2sbe!4v1790666307889!5m2!1snl!2sbe"
-          width="600"
-          height="450"
+          width="300"
+          height="225"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -255,7 +256,7 @@
           omdat ze potentiëel zagen in mij.
         </p>
       </section>
-      <section class="pets-sect">
+      <section id="pet-sect" class="pets-sect">
         <h2>Huisdieren</h2>
         <p>
           Ik heb een hond, 2 katten (en een 3-jarig neefje als je dat wilt
@@ -266,7 +267,11 @@
           huisdier
         </p>
 
-        <img src="images/leo.jpeg" alt="Foto van mijn hond, Leo" />
+        <img
+          style="width: 25%; height: 25%"
+          src="images/leo.jpeg"
+          alt="Foto van mijn hond, Leo"
+        />
         <p>Dit is mijn pommeriaantje, Leo</p>
       </section>
     </main>
