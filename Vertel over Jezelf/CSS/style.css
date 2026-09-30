@@ -1,0 +1,106 @@
+/* html, body, div, header, footer, li, section{
+    border-color: red;
+    border-style: solid;
+} */
+/* intro style */
+body{
+    font-size: 1.2rem;
+    background-color: rgb(248, 231, 201, 0.5);
+}
+.intro-hdr{
+    margin-top: 20px;
+    margin-bottom:30px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 940px;
+    background-color: rgb(6, 78, 56);
+    border-style: solid;
+    border-color: rgb(248, 231, 201);
+    border-radius: 8px;
+    color: rgb(248, 231, 201);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+}
+.intro-hdr-div{
+    border-top-style: solid;
+    border-top-color: rgb(248, 231, 201);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+}
+/* location style */
+.location-sect{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 940px;
+    margin-inline: auto;
+    margin-bottom:30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    background-color: rgb(6, 78, 56);
+    border-style: solid;
+    border-color: rgb(248, 231, 201);
+    border-radius: 8px;
+    color: rgb(248, 231, 201);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+    
+}
+.location-div{
+    margin-inline: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    
+}
+.location-div p{
+    border-top-style: solid;
+    border-top-color: rgb(248, 231, 201);
+    padding-top: 65px;
+}
+
+.location-iframe{
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.maps-sterrebeek{
+    border-radius: 8px;
+    border-color: rgb(248, 231, 201);
+}
+/* hobbies section style */
+.hobbies-sect{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 940px;
+    margin-inline: auto;
+    margin-bottom:30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    background-color: rgb(6, 78, 56);
+    border-style: solid;
+    border-color: rgb(248, 231, 201);
+    border-radius: 8px;
+    color: rgb(248, 231, 201);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4 );
+}
+.hobbies-ol{
+    width: 940px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-inline: auto;
+}
+.hobbies-ol img{
+    width: 100px;
+    height: 100px;
+}
