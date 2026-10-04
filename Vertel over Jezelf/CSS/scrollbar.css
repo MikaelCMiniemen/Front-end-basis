@@ -1,0 +1,5 @@
+html{
+    scrollbar-gutter: stable;
+    overflow: scroll;
+    scrollbar-color: orange yellow;
+}

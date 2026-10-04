@@ -1,0 +1,377 @@
+LUNA'S TATTOO SHOP — NOTES AND STYLE CHOICES
+============================================
+
+POTENTIAL NAMES FOR LUNA'S TATTOO SHOP
+
+Elegant / boutique:
+
+Luna Noir Atelier
+
+Luna Vermeil
+
+Lunula Tattoo Co.
+
+Luna Atelier
+
+Moonstone & Iron
+
+Mystical / nocturnal:
+
+Nocturne Ink
+
+Luna Arcana
+
+Lunar Veil
+
+Moonphase Tattoo Studio
+
+Luna Obscura
+
+Modern / edgy:
+
+Crescent & Coal
+
+Ink & Eclipse
+
+Moonlit Needle
+
+Moon & Marrow
+
+Selene Studio
+
+French / soft luxury:
+
+Luna et Encre
+
+Lune Noire Tattoo
+
+Atelier Lunaire
+
+Tip:
+Check domain, Instagram handle, and trademark availability before committing. "Lunula" is especially nice because it means the crescent shape at the base of a fingernail. It is subtle, tattoo-adjacent, and memorable.
+
+OVERALL VISUAL STYLE
+
+Direction:
+Dark, moody, premium, slightly mystical. Light text on deep, complex dark backgrounds. Metallic accents used like jewelry: thin borders, small labels, dividers, buttons, progress bars, selected states. Not glittery, not neon, not pure black, not pure white.
+
+COLOR PALETTE IDEAS
+
+Avoid pure black, pure white, basic red, and basic blue. Use muted, atmospheric tones.
+
+Dark backgrounds:
+
+Obsidian Plum — #17131C
+
+Charcoal Violet — #1C1A24
+
+Midnight Teal — #0F1D1C
+
+Deep Espresso — #1B1512
+
+Blackened Moss — #121A16
+
+Light text:
+
+Moonstone — #E9E4D8
+
+Pale Opal — #F4F0E8
+
+Frosted Lilac — #DED8EA
+
+Bone — #EFE8DC
+
+Mist — #D8E0DD
+
+Metallic accents:
+
+Moonlit Brass — #C9A86A
+
+Antique Brass — #B08D57
+
+Champagne — #D6C6A8
+
+Brushed Pewter — #A7A9A5
+
+Tarnished Silver — #9DA0A0
+
+Rose Copper — #B76E79
+
+Oxidized Bronze — #8C6A4A
+
+Patina — #6F8F82
+
+Supporting muted colors:
+
+Muted Amethyst — #6B5B7A
+
+Dusty Mauve — #8A6F7E
+
+Deep Sage — #4F6B5D
+
+Smoky Quartz — #6E5F6B
+
+Ink Violet — #2D2438
+
+Suggested combinations:
+
+Obsidian Plum + Moonstone + Moonlit Brass + Tarnished Silver
+
+Midnight Teal + Pale Opal + Rose Copper + Champagne
+
+Charcoal Violet + Frosted Lilac + Antique Brass + Patina
+
+Deep Espresso + Bone + Oxidized Bronze + Smoky Quartz
+
+HOW TO USE METALLIC ACCENTS
+
+Thin 1px borders around cards, buttons, and input fields.
+
+Divider lines between sections.
+
+Small all-caps labels: "ARTIST," "DEPOSIT," "PAYMENT PLAN."
+
+Selected calendar date, active tab, progress bar.
+
+Hover state on buttons: subtle metallic sheen.
+
+Logo or monogram: foil-stamp effect.
+
+Icons: thin line style with metallic stroke.
+
+Do not use metallic colors for long body text. They are accents only. Body text should stay light and readable.
+
+TYPOGRAPHY
+
+Headings: elegant serif or art-nouveau-inspired display. Think Cormorant, Cinzel, Marcellus, Recoleta, Ogg.
+
+Body/UI: clean sans. Inter, Manrope, Satoshi, Space Grotesk.
+
+Script font: only for logo or very short accent phrases.
+
+Small labels: all caps with wide letter spacing.
+
+Keep contrast high: light text on dark background, no low-contrast gray-on-gray.
+
+TEXTURE AND MOTION
+
+Subtle noise/grain on dark backgrounds.
+
+Soft radial vignette.
+
+Slow shimmer on metallic elements.
+
+Ink-bleed or fade transitions.
+
+Respect reduced-motion settings.
+
+ACCESSIBILITY
+
+Body text should meet at least 4.5:1 contrast.
+
+Metallic accents often fail contrast. Use them for borders, icons, large text, or decorative states.
+
+Focus states should be clearly visible: light outline or metallic ring.
+
+Avoid relying on color alone for errors or success.
+
+APPOINTMENT PLANNER NOTES
+
+Goal:
+Make booking feel calm, clear, and premium. Not like a generic booking form.
+
+Flow:
+
+Choose service: custom tattoo, flash, cover-up, consultation, touch-up.
+
+Choose artist or "first available."
+
+Pick date/time from real availability.
+
+Enter details: placement, size, color/blackwork, references, budget, allergies, skin conditions.
+
+Pay deposit or choose payment plan.
+
+Confirmation with reminders and aftercare info.
+
+Useful features:
+
+Real-time availability.
+
+Waitlist for fully booked artists.
+
+Deposit required to lock the slot.
+
+Clear cancellation/reschedule policy before payment.
+
+SMS/email reminders.
+
+Add to calendar.
+
+Intake and consent forms before appointment.
+
+Consultation vs. actual tattoo session distinction.
+
+Mobile-first layout.
+
+UI style:
+
+Step progress indicator at top.
+
+Sticky summary: artist, date, service, deposit, total estimate.
+
+Calendar with muted unavailable dates and metallic selected date.
+
+Forms with dark fields, light labels, metallic focus ring.
+
+Buttons: dark fill, metallic border, light text.
+
+Keep copy reassuring: "A deposit reserves your date and goes toward your final price."
+
+Theming:
+
+Use moon phases subtly for waitlist or availability, but do not make it confusing.
+
+Artist cards: dark cards, metallic border, portrait, specialty tags.
+
+LOG IN NOTES
+
+Goal:
+Low friction for clients, stronger security for artists/admin.
+
+Client login:
+
+Email magic link or Google/Apple sign-in.
+
+Optional password.
+
+Guest booking allowed, then prompt to create account after.
+
+Account area: upcoming/past appointments, deposit receipts, aftercare, payment plan status, saved references, loyalty/referrals.
+
+Artist/admin login:
+
+Email + password + 2FA.
+
+Session timeout.
+
+Role-based access: artist, admin, front desk.
+
+Dashboard for schedule, client notes, approvals, blocked time.
+
+UX details:
+
+Minimal login card on dark background with subtle metallic border.
+
+Clear password reset.
+
+Clear error states: use muted garnet or burnt sienna instead of bright red.
+
+"Remember me" optional.
+
+Terms and privacy consent visible.
+
+Security notes:
+
+Encrypt sensitive data.
+
+Do not store card details directly.
+
+Use trusted payment provider.
+
+Log out inactive sessions.
+
+PAYMENT / PAYMENT PLANS NOTES
+
+Goal:
+Make money feel transparent and flexible, not pushy.
+
+Payment types:
+
+Deposit to book.
+
+Full payment.
+
+Pay-per-session for large pieces.
+
+Milestone payments: outline, shading, color, final session.
+
+Gift cards.
+
+Tips.
+
+Aftercare products.
+
+Payment plans:
+
+Split into 2–4 installments.
+
+Autopay with reminders.
+
+Clear due dates.
+
+Late fee policy stated upfront.
+
+Deposit is usually non-refundable.
+
+For large custom work: monthly plan or pay at each session.
+
+UI elements:
+
+Breakdown: estimated total, deposit, remaining balance, next payment.
+
+Progress bar for payment plan — metallic fill.
+
+"Pay now," "Manage plan," "View receipts."
+
+Show cancellation/no-show policy before checkout.
+
+Success state: muted patina green, not bright green.
+
+Error state: muted brick or burnt sienna, not bright red.
+
+Trust and security:
+
+PCI-compliant provider: Stripe, Square, PayPal, Klarna, Afterpay, Affirm.
+
+3D Secure where available.
+
+Clear refund policy.
+
+Email receipts automatically.
+
+Do not store raw card numbers.
+
+Theming:
+
+Payment cards: dark background, metallic border, light text.
+
+Buttons: "Reserve with deposit," "Choose payment plan," "Pay remaining balance."
+
+Keep language simple: "You'll pay $X today. The rest is due at your session."
+
+ONE STRONG STYLE DIRECTION
+
+Background:
+Obsidian Plum
+
+Text:
+Moonstone
+
+Primary metallic:
+Moonlit Brass
+
+Secondary metallic:
+Tarnished Silver
+
+Support:
+Muted Amethyst
+
+Typography:
+Elegant serif headings + clean sans UI
+
+Feel:
+Nocturnal, premium, mystical, modern tattoo atelier
+
+Avoid:
+Pure black, pure white, bright red, bright blue, neon, overdone sparkle.

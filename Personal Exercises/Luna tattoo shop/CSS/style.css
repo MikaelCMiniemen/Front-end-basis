@@ -1,0 +1,53 @@
+/* BODY STYLe */
+body{
+    background: #17131C;
+    color: #E9E4D8;
+}
+/* HEADER STYLES */
+.hdr-home{
+    margin: i ,;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+/* LIST ITEM STYLE */
+li{
+  list-style: none;  
+}
+/* NAVIGATION STYLE */
+nav{
+    height: fit-content;
+    width: 450px;
+}
+.nav-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+/* TITLE DIV STYLE */
+.title-div{
+    padding-inline: 100px;
+    height: fit-content;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* LOGIN STYLE */
+.login-div{
+    
+    height: fit-content;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ANCHOR STYLE */
+a {
+    text-decoration: none;
+    border-bottom: 2px solid #B08D57;
+    color: inherit;
+}
