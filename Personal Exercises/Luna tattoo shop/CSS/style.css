@@ -1,3 +1,19 @@
+/* BOX-SIZING */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
 /* BODY STYLe */
 body{
     background: #17131C;
@@ -5,11 +21,14 @@ body{
 }
 /* HEADER STYLES */
 .hdr-home{
-    margin: i ,;
+    font-family: "Cinzel Decorative", serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    background: #17131C;
+    background: linear-gradient(180deg, rgba(23, 19, 28, 1) 0%, 
+    rgba(44, 36, 53, 1) 100%);
+    box-shadow: 0px 4px 2px 0px rgba(176,141,87,1);
 }
 /* LIST ITEM STYLE */
 li{
@@ -24,8 +43,10 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
     gap: 50px;
 }
+
 /* TITLE DIV STYLE */
 .title-div{
     padding-inline: 100px;
@@ -38,12 +59,25 @@ nav{
 }
 /* LOGIN STYLE */
 .login-div{
-    
     height: fit-content;
     width: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.login-btn{
+    height: 50px;
+    width: 100px; 
+    border-style: none;
+    border-bottom: solid;
+    border-color: #B08D57;
+    background: none;
+    color: #E9E4D8;
+}
+.hover-color:hover{
+    transform: translate(0, -10);
+    background: #423650; 
+    cursor: pointer;
 }
 /* ANCHOR STYLE */
 a {
@@ -51,3 +85,4 @@ a {
     border-bottom: 2px solid #B08D57;
     color: inherit;
 }
+
