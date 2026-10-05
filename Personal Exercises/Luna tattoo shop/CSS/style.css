@@ -1,10 +1,13 @@
- /*------------------------------------------------------- ROOT -------------------------------------------------------*/
+  /*------------------------------------------------------- ROOT -------------------------------------------------------*/
       :root {
         --text: rgb(233, 228, 216);
         --background: rgb(23, 19, 27);
         --primary: rgb(156, 160, 160);
+        --primary-soft: rgb(156, 160, 160, 0.5);
         --secondary: rgb(45, 36, 56);
+        --secondary-soft: rgb(45, 36, 56, 0.5);
         --accent: rgb(177, 140, 89);
+        --accent-soft: rgb(177, 140, 89, 0.5);
 
         --hover-soft: rgba(66, 54, 80, 0.2);
         --hover-solid: rgb(66, 54, 80);
@@ -55,7 +58,7 @@
 
       /*------------------------------------------------------- BODY -------------------------------------------------------*/
       body {
-        background: var(--background);
+        background: transparent;
         color: var(--text);
         font-family: system-ui, sans-serif;
       }
@@ -116,6 +119,7 @@
 
       /* LOGIN */
       .login-div {
+        padding-left: 150px;
         height: fit-content;
         width: 450px;
         display: flex;
@@ -125,8 +129,9 @@
         font-weight: 700;
       }
       .login-btn {
-        height: 50px;
-        width: 100px;
+        padding: 10px 10px 10px 10px;
+        height: fit-content;
+        width: fit-content;
         border-style: none;
         border-bottom: 2px solid var(--accent);
         background: none;
@@ -137,19 +142,21 @@
         letter-spacing: 0.1em;
         cursor: pointer;
       }
-
+      .login-btn:hover{
+        font-size: 1.2em;
+        background: linear-gradient(
+            var(--hover-soft) 0%,
+            var(--accent) 100%
+        );
+      }
       /* HOVER */
       .hover-y-up {
         transition: transform 0.2s ease, 0.25s ease,
           box-shadow 0.25s ease;
       }
       .hover-y-up:hover {
+        font-size: 1.2em;
         transform: translateY(-2px);
-        background: linear-gradient(
-          180deg,
-          var(--hover-soft) 0%,
-          var(--hover-solid) 100%
-        );
         cursor: pointer;
         border-radius: 15px;
         box-shadow: 10px 10px 5px 0px var(--shadow);
@@ -164,22 +171,32 @@
         color: inherit;
         transition: border-color 0.25s ease, color 0.25s ease;
       }
-      a:hover {
-        border-bottom-color: var(--accent);
+      nav a:hover {
+        background: linear-gradient(
+        180deg,
+        var(--hover-soft) 0%,
+        var(--primary-soft) 100%
+);
       }
+
 
       /*------------------------------------------------------- MAIN -------------------------------------------------------*/
       .main-home {
+        height: 2000px;
         border-top: 4px solid var(--accent);
-        background-color: var(--background);
+        background: linear-gradient(
+            180deg,
+            var(--secondary) 0%,
+            var(--primary, alpha 0.5) 100%);
       }
 
       /*------------------------------------------------------- SLIDESHOW -------------------------------------------------------*/
       .slideshow-sect {
+        margin-inline: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 50%;
         padding: 2rem 0;
       }
 
@@ -191,13 +208,20 @@
         margin-inline: auto;
         overflow: hidden;
         border-radius: 12px;
-        border: 1px solid var(--secondary);
+        transition: 0.25s ease, color 0.25s ease,
+          transform 0.2s ease;
+        box-shadow: -10px 10px 0px 0px var(--primary);
       }
-
+      .slideshow-display-container:hover{
+        box-shadow: 10px 10px 0px 0px var(--accent);
+      }
       .slides-div {
+        border-radius: 12px;
         position: relative;
         width: 100%;
         height: 100%;
+        transition: 0.25s ease, color 0.25s ease,
+          transform 0.2s ease;
       }
 
       .mySlides {
@@ -208,6 +232,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: inherit;
+        box-shadow: -10px 10px 0px 0px rgba(156,160,160,1);
+        transition: 0.25s ease, color 0.25s ease,
+          transform 0.2s ease;
       }
       
       .mySlides.active {
