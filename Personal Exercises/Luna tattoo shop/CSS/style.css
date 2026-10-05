@@ -1,173 +1,243 @@
-/*------------------------------------------------------- ROOT -------------------------------------------------------*/
-:root {
-    --text: rgb(233, 228, 216);
-    --background: rgb(23, 19, 27);
-    --primary: rgb(156, 160, 160);
-    --secondary: rgb(45, 36, 56);
-    --accent: rgb(177, 140, 89);
+ /*------------------------------------------------------- ROOT -------------------------------------------------------*/
+      :root {
+        --text: rgb(233, 228, 216);
+        --background: rgb(23, 19, 27);
+        --primary: rgb(156, 160, 160);
+        --secondary: rgb(45, 36, 56);
+        --accent: rgb(177, 140, 89);
 
-    /* added: colors that exist in the CSS but weren't in the palette */
-    --hover-soft: rgba(66, 54, 80, 0.2);
-    --hover-solid: rgb(66, 54, 80);
-    --shadow: rgba(0, 0, 0, 0.5);
-}
-/*------------------------------------------------------- BOX-SIZING -------------------------------------------------------*/
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-html, body {
-    margin: 0;
-    padding: 0;
-}
-/* SCROLLBAR */
-/* Firefox */
-html {
-    scrollbar-width: thin;
-    scrollbar-color: var(--accent) transparent;
-}
+        --hover-soft: rgba(66, 54, 80, 0.2);
+        --hover-solid: rgb(66, 54, 80);
+        --shadow: rgba(0, 0, 0, 0.5);
+      }
 
-/* Chrome, Edge, Safari, Opera */
-html::-webkit-scrollbar {
-    width: 10px;
-}
-html::-webkit-scrollbar-track {
-    background: transparent;
-}
-html::-webkit-scrollbar-thumb {
-    background: var(--accent);
-    border-radius: 10px;
-    border: 2px solid transparent;
-    background-clip: content-box;
-}
-html::-webkit-scrollbar-thumb:hover {
-    background: var(--text);
-    background-clip: content-box;
-}
+      /*------------------------------------------------------- BOX-SIZING -------------------------------------------------------*/
+      html {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent) transparent;
+      }
+      *,
+      *::before,
+      *::after {
+        -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+        box-sizing: inherit;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
-/* BODY STYLE */
-body {
-    background: var(--background);
-    color: var(--text);
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: var(--accent) none;
-}
+      /*------------------------------------------------------- SCROLLBAR -------------------------------------------------------*/
+      /* Firefox uses the two lines above on html. */
+      /* Chrome, Edge, Safari, Opera: */
+      html::-webkit-scrollbar {
+        width: 10px;
+      }
+      html::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      html::-webkit-scrollbar-thumb {
+        background: var(--accent);
+        border-radius: 10px;
+        border: 2px solid transparent;
+        background-clip: content-box;
+      }
+      html::-webkit-scrollbar-thumb:hover {
+        background: var(--text);
+        background-clip: content-box;
+      }
 
-/*------------------------------------------------------- HEADER STYLE -------------------------------------------------------*/
-.hdr-home {
-    font-family: "Cinzel Decorative", serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: var(--background);
-    background: linear-gradient(180deg, var(--background) 0%,
-    var(--secondary) 100%);
-}
+      /*------------------------------------------------------- BODY -------------------------------------------------------*/
+      body {
+        background: var(--background);
+        color: var(--text);
+        font-family: system-ui, sans-serif;
+      }
 
-/* LIST ITEM STYLE */
-li {
-  list-style: none;
-}
+      /*------------------------------------------------------- HEADER -------------------------------------------------------*/
+      .hdr-home {
+        font-family: "Cinzel Decorative", serif;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 2rem;
+        background: linear-gradient(
+          180deg,
+          var(--background) 0%,
+          var(--secondary) 100%
+        );
+      }
 
-/* NAVIGATION STYLE */
-nav {
-    height: fit-content;
-    width: 450px;
-}
-.nav-ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 50px;
-}
+      li {
+        list-style: none;
+      }
 
-/* TITLE DIV STYLE */
-.logo-div {
-    padding-inline: 100px;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.logo-icon {
-    height: 150px;
-}
-.title {
-    margin-inline: auto;
-    width: fit-content;
-    text-align: center;
-}
+      /* NAVIGATION */
+      nav {
+        height: fit-content;
+        width: 450px;
+      }
+      .nav-ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+      }
 
-/* LOGIN STYLE */
-.login-div {
-    padding-left: 100px;
-    height: fit-content;
-    width: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Cinzel Decorative", serif;
-    font-weight: 700;
-}
-.login-btn {
-    height: 50px;
-    width: 100px;
-    border-style: none;
-    border-bottom: solid;
-    border-color: var(--accent);
-    background: none;
-    color: var(--text);
-    font-family: "Cinzel Decorative", serif;
-    font-weight: 700;
-    font-size: 1rem;
-}
+      /* LOGO / TITLE */
+      .logo-div {
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .logo-icon {
+        height: 150px;
+        width: auto;
+        object-fit: contain;
+      }
+      .title {
+        margin: 0;
+        margin-inline: auto;
+        width: fit-content;
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 0.15em;
+      }
 
-.hover-color:hover {
-    transform: translate(0, -2px);
-    background: linear-gradient(180deg, var(--hover-soft) 0%,
-    var(--hover-solid) 100%);
-    cursor: pointer;
-    border-radius: 15px;
-    box-shadow: 10px 10px 5px 0px var(--shadow);
-}
+      /* LOGIN */
+      .login-div {
+        height: fit-content;
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 700;
+      }
+      .login-btn {
+        height: 50px;
+        width: 100px;
+        border-style: none;
+        border-bottom: 2px solid var(--accent);
+        background: none;
+        color: var(--text);
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+      }
 
-/* ANCHOR STYLE */
-a {
-    display: inline-block;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-bottom: 2px solid var(--primary);
-    color: inherit;
-}
+      /* HOVER */
+      .hover-y-up {
+        transition: transform 0.2s ease, 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+      .hover-y-up:hover {
+        transform: translateY(-2px);
+        background: linear-gradient(
+          180deg,
+          var(--hover-soft) 0%,
+          var(--hover-solid) 100%
+        );
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px 0px var(--shadow);
+      }
 
-/*------------------------------------------------------- MAIN STYLE -------------------------------------------------------*/
-.main-home {
-    height: 500px;
-    border-top: 4px solid var(--accent);
-    background-color: var(--background);
-}
-.slideshow-sect{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid red;
-    height: 500px;
-    width:100%;
-}
-.slideshow-display-container{
-    margin-inline: auto;
-    height: 50%;
-    width: 100%;
-}
-.mySlides{
-    height: 100%;
-    width: 25%;
-}
+      /* ANCHORS */
+      a {
+        display: inline-block;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-bottom: 2px solid var(--primary);
+        color: inherit;
+        transition: border-color 0.25s ease, color 0.25s ease;
+      }
+      a:hover {
+        border-bottom-color: var(--accent);
+      }
+
+      /*------------------------------------------------------- MAIN -------------------------------------------------------*/
+      .main-home {
+        border-top: 4px solid var(--accent);
+        background-color: var(--background);
+      }
+
+      /*------------------------------------------------------- SLIDESHOW -------------------------------------------------------*/
+      .slideshow-sect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2rem 0;
+      }
+
+      .slideshow-display-container {
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        height: 500px;
+        margin-inline: auto;
+        overflow: hidden;
+        border-radius: 12px;
+        border: 1px solid var(--secondary);
+      }
+
+      .slides-div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .mySlides {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .mySlides.active {
+        display: block;
+      }
+      /* ARROWS */
+      .slideshow-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(23, 19, 27, 0.6);
+        color: var(--text);
+        border: 1px solid var(--accent);
+        font-size: 1.5rem;
+        padding: 12px 18px;
+        cursor: pointer;
+        z-index: 2;
+        border-radius: 8px;
+        line-height: 1;
+        transition: 0.25s ease, color 0.25s ease,
+          transform 0.2s ease;
+      }
+      .slideshow-btn:hover {
+        background: var(--background);
+        color: var(--accent);
+        transform: translateY(-50%) scale(1.05);
+      }
+      .slideshow-btn-left {
+        left: 16px;
+      }
+      .slideshow-btn-right {
+        right: 16px;
+      }

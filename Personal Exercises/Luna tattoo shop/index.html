@@ -1,55 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home-Luna's Tattoos</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Home — Lunatic Tattoos</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Cinzel Decorative"
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="JS/slideshow.js"></script>
+</head>
+<body>
     <header class="hdr-home">
       <nav>
         <ul class="nav-ul">
-          <li class="nav-link"><a class="hover-color" href="#">HOME</a></li>
+          <li class="nav-link"><a class="hover-y-up" href="#">HOME</a></li>
           <li class="nav-link">
             <a class="hover-color" href="#">APPOINTMENTS</a>
           </li>
-          <li class="nav-link"><a class="hover-color" href="#">CONTACT</a></li>
+          <li class="nav-link"><a class="hover-y-up" href="#">CONTACT</a></li>
         </ul>
       </nav>
+
       <div class="logo-div">
         <img
           class="logo-icon"
-          src="IMAGES/Firefly_Minimalist luxury logo mark for a premium tattoo studio. A thin elegant crescent moon 210509.png"
+          src="IMAGES/Lunatic-tattoos-logo.png"
           alt="Logo Lunatic Tattoos"
         />
         <h1 class="title">LUNATIC TATTOOS</h1>
       </div>
+
       <div class="login-div">
-        <button class="login-btn hover-color">LOG IN</button>
+        <button class="login-btn hover-y-up">LOG IN</button>
       </div>
     </header>
+
     <main class="main-home">
       <section class="slideshow-sect">
         <div class="slideshow-display-container">
-          <img class="mySlides" src="img_snowtops.jpg" style="width: 100%" />
-          <img class="mySlides" src="img_lights.jpg" style="width: 100%" />
-          <img class="mySlides" src="img_mountains.jpg" style="width: 100%" />
-          <img class="mySlides" src="img_forest.jpg" style="width: 100%" />
-
           <button
-            class="w3-button w3-black w3-display-left"
+            class="slideshow-btn slideshow-btn-left"
             onclick="plusDivs(-1)"
+            aria-label="Previous slide"
           >
             &#10094;
           </button>
+
+          <div class="slides-div hover-y-up">
+            <img
+              class="mySlides active"
+              src="IMAGES/slide1-home.jpg"
+              alt="Tattoo work 1"
+            />
+            <img
+              class="mySlides"
+              src="IMAGES/slide2-home.jpg"
+              alt="Tattoo work 2"
+            />
+            <img
+              class="mySlides"
+              src="IMAGES/slide3-home.jpg"
+              alt="Tattoo work 3"
+            />
+            <img
+              class="mySlides"
+              src="IMAGES/slide4-home.jpg"
+              alt="Tattoo work 4"
+            />
+          </div>
+
           <button
-            class="w3-button w3-black w3-display-right"
+            class="slideshow-btn slideshow-btn-right"
             onclick="plusDivs(1)"
+            aria-label="Next slide"
           >
             &#10095;
           </button>

@@ -1,19 +1,21 @@
-let slideIndex = 1;
-showDivs(slideIndex);
+ let slideIndex = 1;
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+      // Show first slide on load
+      showSlides(slideIndex);
 
-function showDivs(n) {
-  const slides = document.querySelectorAll(".mySlides");
+      function plusDivs(n) {
+        showSlides((slideIndex += n));
+      }
 
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+      function showSlides(n) {
+        const slides = document.getElementsByClassName("mySlides");
 
-  slides.forEach(slide => {
-    slide.style.display = "none";
-  });
+        if (n > slides.length) slideIndex = 1;
+        if (n < 1) slideIndex = slides.length;
 
-  slides[slideIndex - 1].style.display = "block";
-}
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("active");
+        }
+
+        slides[slideIndex - 1].classList.add("active");
+      }
