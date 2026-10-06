@@ -21,7 +21,7 @@
         box-sizing: border-box;
         overflow-y: scroll;
         scrollbar-width: thin;
-        scrollbar-color: var(--accent) transparent;
+        scrollbar-color: var(--accent) var(--background);
       }
       *,
       *::before,
@@ -37,8 +37,6 @@
       }
 
       /*------------------------------------------------------- SCROLLBAR -------------------------------------------------------*/
-      /* Firefox uses the two lines above on html. */
-      /* Chrome, Edge, Safari, Opera: */
       html::-webkit-scrollbar {
         width: 10px;
       }
@@ -58,7 +56,7 @@
 
       /*------------------------------------------------------- BODY -------------------------------------------------------*/
       body {
-        background: transparent;
+        background-color: var(--background);
         color: var(--text);
         font-family: system-ui, sans-serif;
       }
@@ -116,7 +114,6 @@
         font-size: 1.5rem;
         letter-spacing: 0.15em;
       }
-
       /* LOGIN */
       .login-div {
         padding-left: 150px;
@@ -210,10 +207,14 @@
         border-radius: 12px;
         transition: 0.25s ease, color 0.25s ease,
           transform 0.2s ease;
-        box-shadow: -10px 10px 0px 0px var(--primary);
+        filter: drop-shadow(-10px 10px 0px var(--primary));
+        will-change: transform;
+        backface-visibility: hidden;  
       }
       .slideshow-display-container:hover{
-        box-shadow: 10px 10px 0px 0px var(--accent);
+        filter: drop-shadow(10px 10px 0px var(--accent));
+        will-change: transform;
+        backface-visibility: hidden;
       }
       .slides-div {
         border-radius: 12px;

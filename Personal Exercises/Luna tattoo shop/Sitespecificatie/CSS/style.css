@@ -1,0 +1,210 @@
+/*------------------------------------------------------- ROOT -------------------------------------------------------*/
+:root {
+  --text: hsl(42, 28%, 88%);
+  --background: rgb(23, 19, 27);
+
+  --primary: rgb(156, 160, 160);
+  --primary-soft: rgba(156, 160, 160, 0.5);
+
+  --secondary: rgb(45, 36, 56);
+  --secondary-soft: rgb(45, 36, 56, 0.5);
+
+  --accent: rgb(177, 140, 89);
+  --accent-soft: rgba(177, 140, 89, 0.502);
+
+  --hover-soft: rgba(66, 54, 80, 0.2);
+  --hover-solid: rgb(66, 54, 80);
+
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------------------------------------- BOX-SIZING -------------------------------------------------------*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------------------------------------- SCROLLBAR -------------------------------------------------------*/
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--text);
+  background-clip: content-box;
+}
+/*------------------------------------------------------- BODY -------------------------------------------------------*/
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
+/* ------------------------------------------------------- HEADER -------------------------------------------------------*/
+.hdr-spec {
+  font-family: "Cinzel Decorative", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    180deg,
+    var(--background) 0%,
+    var(--secondary) 100%
+  );
+}
+
+/* LOGO / TITLE */
+.logo-div {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.logo-icon {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+.title {
+  margin: 0;
+  margin-inline: auto;
+  width: fit-content;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+}
+/*------------------------------------------------------- MAIN -------------------------------------------------------  */
+.main-spec {
+  margin-inline: auto;
+  height: 2000px;
+  border-top: 4px solid var(--accent);
+  background: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+}
+.page-title-div {
+  text-align: center;
+}
+/*------------------------------------------------------- INFO SECTION -------------------------------------------------------  */
+.spec-info-sect {
+  margin-inline: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.spec-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.spec-info h3 {
+  margin-inline: auto;
+}
+.spec-info-left {
+  text-align: start;
+}
+.spec-info-left div:hover {
+  transform: translateX(-10px);
+}
+.spec-info-right {
+  text-align: end;
+}
+.spec-info-right div:hover {
+  transform: translateX(10px);
+}
+.spec-info-div {
+  width: 50%;
+  margin: 20px 20px 20px 20px;
+}
+.spec-info-div p {
+  margin: 10px 10px 10px 10px;
+}
+.spec-info-div h3 {
+  width: fit-content;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--primary);
+}
+.spec
+/* HOVER */
+.hover-y-up {
+  transition:
+    transform 0.2s ease,
+    0.25s ease,
+    box-shadow 0.25s ease;
+}
+.hover-y-up:hover {
+  /* font-size: 1.1em; */
+  transform: translateY(-2px);
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px 0px var(--shadow);
+  background: linear-gradient(var(--hover-soft) 0%, var(--accent-soft));
+}
+/* move right */
+.move-right {
+  /* ADD BORDER-BOTTOM EXTENSION VIA JS */
+  border-right: 2px solid var(--accent);
+  transition:
+    transform 0.2s ease,
+    0.25s ease,
+    box-shadow 0.25s ease;
+}
+.move-right:hover {
+  border: 4px solid var(--accent);
+  /* font-size: 1.1em; */
+  transform: translateY(-2px);
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px 0px var(--shadow);
+  background: linear-gradient(90deg, var(--hover-soft) 0%, var(--accent-soft));
+}
+/* move left */
+.move-left {
+  border-left: 2px solid var(--accent);
+  transition:
+    transform 0.2s ease,
+    0.25s ease,
+    box-shadow 0.25s ease;
+}
+.move-left:hover {
+  border: 4px solid var(--accent);
+  /* font-size: 1.1em; */
+  transform: translateY(-2px);
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px 0px var(--shadow);
+  background: linear-gradient(270deg, var(--hover-soft) 0%, var(--accent-soft));
+}
+.border-extension {
+  border: 2px;
+}
