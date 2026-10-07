@@ -1,6 +1,6 @@
     /*------------------------------------------------------- ROOT -------------------------------------------------------*/
 :root {
-  --text: rgb(233, 228, 216);;
+  --text: rgb(233, 228, 216);
   --background: rgb(23, 19, 27);
 
   --primary: rgb(156, 160, 160);
@@ -15,7 +15,7 @@
   --hover-soft: rgba(66, 54, 80, 0.2);
   --hover-solid: rgb(66, 54, 80);
 
-  --shadow: rgba(0,0,0, 0.5);
+  --shadow: rgba(0, 0, 0, 0.5);
 }
 
 /*------------------------------------------------------- BOX-SIZING -------------------------------------------------------*/
@@ -87,14 +87,13 @@ body {
   flex-direction: column;
   gap: 0.5rem;
 }
- .logo-icon {
+.logo-icon {
   height: 150px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease, filter 0.3s ease;
   filter: drop-shadow(0 0 0 rgba(177, 140, 89, 0));
 }
-
 .logo-icon:hover {
   transform: scale(1.1);
   filter:
@@ -110,7 +109,7 @@ body {
   letter-spacing: 0.15em;
   transition: transform 0.25s ease;
 }
-.title:hover{
+.title:hover {
   transform: scale(1.1);
   filter:
     drop-shadow(0 0 8px var(--text))
@@ -128,15 +127,13 @@ body {
   text-align: center;
   border-bottom: 2px solid var(--accent);
   width: fit-content;
-  transition: transform 0.25s ease, 0.25s ease;
+  transition: transform 0.25s ease;
 }
-.page-title-div:hover{
-    transform: scale(1.1);
-    border-bottom: 4px solid var(--accent);
+.page-title-div:hover {
+  transform: scale(1.1);
+  border-bottom: 4px solid var(--accent);
 }
 /*------------------------------------------------------- INFO SECTION -------------------------------------------------------  */
-/* TODO: Work on some style choices vor the info section */
-/* TODO: change border-color of title of div to match parent when parent is hovered */
 .spec-info-sect {
   margin-bottom: 40px;
   margin-inline: auto;
@@ -154,58 +151,48 @@ body {
   flex-direction: column;
   gap: 40px;
 }
-.spec-info h3 {
-  margin-inline: auto;
-}
 .spec-info-left {
   text-align: start;
-  margin-top: 100px
-}
-.spec-info-left div:hover {
-  transform: translateX(-10px);
+  margin-top: 100px;
 }
 .spec-info-right {
   text-align: end;
-  margin-bottom: 100px
-
-}
-.spec-info-right div:hover {
-  transform: translateX(10px);
+  margin-bottom: 100px;
 }
 .spec-info-div {
   width: 50%;
-  margin: 20px 20px 20px 20px;
+  margin: 20px;
 }
 .spec-info-div p {
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
 }
 .spec-info-div h3 {
   width: fit-content;
   padding-bottom: 15px;
   border-bottom: 2px solid var(--primary);
 }
-.spec-info-right div:last-child{
-  color: var(--secondary);
-  border-right: 2px solid var(--background);
+.spec-info-right div:last-child {
+  color: var(--background);
+  border-right: 2px solid var(--secondary);
 }
-.spec-info-left div:last-child{
-  color: var(--secondary);
-  border-left: 2px solid var(--background);
+.spec-info-left div:last-child {
+  color: var(--background);
+  border-left: 2px solid var(--secondary);
 }
-.spec-info div:last-child h3{
-  color: var(--secondary);
-  border-bottom: 2px solid var(--background);
+.spec-info div:last-child h3 {
+  color: var(--background);
+  border-bottom: 2px solid var(--secondary);
 }
-.spec-info-right div:last-child:hover{
-  border: 4px solid var(--background);
+.spec-info-right div:last-child:hover {
+  border: 4px solid var(--secondary);
   background: linear-gradient(
     90deg,
     var(--hover-soft),
     var(--primary-soft)
   );
 }
-.spec-info-left div:last-child:hover{
-  border: 4px solid var(--background);
+.spec-info-left div:last-child:hover {
+  border: 4px solid var(--secondary);
   background: linear-gradient(
     270deg,
     var(--hover-soft),
@@ -216,11 +203,9 @@ body {
 .hover-y-up {
   transition:
     transform 0.2s ease,
-    0.25s ease,
     box-shadow 0.25s ease;
 }
 .hover-y-up:hover {
-  /* font-size: 1.1em; */
   transform: translateY(-2px);
   cursor: pointer;
   border-radius: 15px;
@@ -229,16 +214,13 @@ body {
 }
 /* move right */
 .move-right {
-  /* ADD BORDER-BOTTOM EXTENSION VIA JS */
   border-right: 2px solid var(--primary);
   transition:
     transform 0.2s ease,
-    0.25s ease,
     box-shadow 0.25s ease;
 }
 .move-right:hover {
   border: 4px solid var(--primary);
-  /* font-size: 1.1em; */
   transform: translateY(-2px);
   cursor: pointer;
   border-radius: 15px;
@@ -250,23 +232,18 @@ body {
   border-left: 2px solid var(--primary);
   transition:
     transform 0.2s ease,
-    0.25s ease,
     box-shadow 0.25s ease;
 }
 .move-left:hover {
   border: 4px solid var(--primary);
-  /* font-size: 1.1em; */
   transform: translateY(-2px);
   cursor: pointer;
   border-radius: 15px;
   box-shadow: 10px 10px 5px 0px var(--shadow);
   background: linear-gradient(270deg, var(--hover-soft) 0%, var(--hover-solid));
 }
-.border-extension {
-  border: 2px;
-}
 /*------------------------------------------------------- FOOTER -------------------------------------------------------  */
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,39 +255,35 @@ footer{
   color: var(--secondary);
   font-size: 1.1em;
 }
-footer h3{
+footer h3 {
   font-size: 1.2em;
 }
-.footer-h-top{
+.footer-h-top {
   width: fit-content;
   border-bottom: 2px solid var(--secondary);
 }
-.footer-h-bottom{
+.footer-h-bottom {
   width: fit-content;
   border-top: 2px solid var(--secondary);
 }
-.footer-div h3, .footer-div p{
-  margin: 20px 20px 20px 20px;
+.footer-div h3,
+.footer-div p {
+  margin: 20px;
 }
-.footer-div{
+.footer-div {
   width: 320px;
   height: 160px;
   border-right: 2px solid var(--secondary-soft);
-  border-left:2px solid var(--secondary-soft);
+  border-left: 2px solid var(--secondary-soft);
 }
-.footer-div:hover{
-  transform: translateY(-10);
+.footer-div:hover {
+  transform: translateY(-10px);
   cursor: pointer;
   border: 4px solid var(--secondary);
-  background: linear-gradient(180deg, 
-  var(--primary-soft), 
-  var(--primary));
-  border-radius: 15px;
-  cursor: pointer;
+  background: linear-gradient(180deg, var(--primary-soft), var(--primary));
   border-radius: 15px;
   box-shadow: 10px 10px 5px 0px var(--shadow);
   transition:
     transform 0.2s ease,
-    0.25s ease,
     box-shadow 0.25s ease;
 }
