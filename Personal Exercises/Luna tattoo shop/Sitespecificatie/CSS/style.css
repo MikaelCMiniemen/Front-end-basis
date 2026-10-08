@@ -59,7 +59,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 /*------------------------------------------------------- BODY -------------------------------------------------------*/
 body {
-  background: var(--background);
+  background: var(--primary);
   color: var(--text);
   font-family: system-ui, sans-serif;
 }
