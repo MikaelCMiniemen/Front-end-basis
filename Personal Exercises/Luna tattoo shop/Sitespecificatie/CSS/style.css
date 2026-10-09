@@ -135,6 +135,7 @@ body {
 }
 /*------------------------------------------------------- INFO SECTION -------------------------------------------------------  */
 .spec-info-sect {
+  font-family: "Inter", sans-serif;
   margin-bottom: 40px;
   margin-inline: auto;
   width: 80%;
@@ -255,7 +256,7 @@ footer {
   width: 100%;
   background-color: var(--primary);
   color: var(--secondary);
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 footer h3 {
   font-size: 1.2em;
