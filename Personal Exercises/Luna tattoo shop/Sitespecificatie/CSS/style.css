@@ -159,6 +159,7 @@ body {
   text-align: end;
   margin-bottom: 100px;
 }
+
 .spec-info-div {
   width: 50%;
   margin: 20px;
@@ -167,6 +168,7 @@ body {
   margin: 10px;
 }
 .spec-info-div h3 {
+  margin-inline: auto;
   width: fit-content;
   padding-bottom: 15px;
   border-bottom: 2px solid var(--primary);
