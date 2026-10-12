@@ -1,272 +1,409 @@
-  /*------------------------------------------------------- ROOT -------------------------------------------------------*/
-      :root {
-        --text: rgb(233, 228, 216);
-        --background: rgb(23, 19, 27);
-        --primary: rgb(156, 160, 160);
-        --primary-soft: rgb(156, 160, 160, 0.5);
-        --secondary: rgb(45, 36, 56);
-        --secondary-soft: rgb(45, 36, 56, 0.5);
-        --accent: rgb(177, 140, 89);
-        --accent-soft: rgb(177, 140, 89, 0.5);
+/*------------------------------------------------------- ROOT -------------------------------------------------------*/
+:root {
+  --text: rgb(233, 228, 216);
+  --background: rgb(23, 19, 27);
 
-        --hover-soft: rgba(66, 54, 80, 0.2);
-        --hover-solid: rgb(66, 54, 80);
-        --shadow: rgba(0, 0, 0, 0.5);
-      }
+  --primary: rgb(156, 160, 160);
+  --primary-soft: rgba(156, 160, 160, 0.2);
 
-      /*------------------------------------------------------- BOX-SIZING -------------------------------------------------------*/
-      html {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        overflow-y: scroll;
-        scrollbar-width: thin;
-        scrollbar-color: var(--accent) var(--background);
-      }
-      *,
-      *::before,
-      *::after {
-        -webkit-box-sizing: inherit;
-        -moz-box-sizing: inherit;
-        box-sizing: inherit;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
+  --secondary: rgb(45, 36, 56);
+  --secondary-soft: rgba(45, 36, 56, 0.5);
 
-      /*------------------------------------------------------- SCROLLBAR -------------------------------------------------------*/
-      html::-webkit-scrollbar {
-        width: 10px;
-      }
-      html::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      html::-webkit-scrollbar-thumb {
-        background: var(--accent);
-        border-radius: 10px;
-        border: 2px solid transparent;
-        background-clip: content-box;
-      }
-      html::-webkit-scrollbar-thumb:hover {
-        background: var(--text);
-        background-clip: content-box;
-      }
+  --accent: rgb(177, 140, 89);
+  --accent-soft: rgba(177, 140, 89, 0.2);
 
-      /*------------------------------------------------------- BODY -------------------------------------------------------*/
-      body {
-        background-color: var(--background);
-        color: var(--text);
-        font-family: system-ui, sans-serif;
-      }
+  --hover-soft: rgba(66, 54, 80, 0.2);
+  --hover-solid: rgb(66, 54, 80);
 
-      /*------------------------------------------------------- HEADER -------------------------------------------------------*/
-      .hdr-home {
-        font-family: "Cinzel Decorative", serif;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 2rem;
-        padding: 1rem 2rem;
-        background: linear-gradient(
-          180deg,
-          var(--background) 0%,
-          var(--secondary) 100%
-        );
-      }
+  --shadow: rgba(0, 0, 0, 0.5);
+}
 
-      li {
-        list-style: none;
-      }
-
-      /* NAVIGATION */
-      nav {
-        height: fit-content;
-        width: 450px;
-      }
-      .nav-ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 50px;
-      }
-
-      /* LOGO / TITLE */
-      .logo-div {
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-      .logo-icon {
-        height: 150px;
-        width: auto;
-        object-fit: contain;
-      }
-      .title {
-        margin: 0;
-        margin-inline: auto;
-        width: fit-content;
-        text-align: center;
-        font-size: 1.5rem;
-        letter-spacing: 0.15em;
-      }
-      /* LOGIN */
-      .login-div {
-        padding-left: 150px;
-        height: fit-content;
-        width: 450px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Cinzel Decorative", serif;
-        font-weight: 700;
-      }
-      .login-btn {
-        padding: 10px 10px 10px 10px;
-        height: fit-content;
-        width: fit-content;
-        border-style: none;
-        border-bottom: 2px solid var(--accent);
-        background: none;
-        color: var(--text);
-        font-family: "Cinzel Decorative", serif;
-        font-weight: 700;
-        font-size: 1rem;
-        letter-spacing: 0.1em;
-        cursor: pointer;
-      }
-      .login-btn:hover{
-        font-size: 1.2em;
-        background: linear-gradient(
-            var(--hover-soft) 0%,
-            var(--accent) 100%
-        );
-      }
-      /* HOVER */
-      .hover-y-up {
-        transition: transform 0.2s ease, 0.25s ease,
-          box-shadow 0.25s ease;
-      }
-      .hover-y-up:hover {
-        font-size: 1.2em;
-        transform: translateY(-2px);
-        cursor: pointer;
-        border-radius: 15px;
-        box-shadow: 10px 10px 5px 0px var(--shadow);
-      }
-
-      /* ANCHORS */
-      a {
-        display: inline-block;
-        padding: 12px 20px;
-        text-decoration: none;
-        border-bottom: 2px solid var(--primary);
-        color: inherit;
-        transition: border-color 0.25s ease, color 0.25s ease;
-      }
-      nav a:hover {
-        background: linear-gradient(
-        180deg,
-        var(--hover-soft) 0%,
-        var(--primary-soft) 100%
-);
-      }
+/*------------------------------------------------------- BOX-SIZING -------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 
-      /*------------------------------------------------------- MAIN -------------------------------------------------------*/
-      .main-home {
-        height: 2000px;
-        border-top: 4px solid var(--accent);
-        background: linear-gradient(
-            180deg,
-            var(--secondary) 0%,
-            var(--primary, alpha 0.5) 100%);
-      }
+/*------------------------------------------------------- SCROLLBAR -------------------------------------------------------*/
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--text);
+  background-clip: content-box;
+}
 
-      /*------------------------------------------------------- SLIDESHOW -------------------------------------------------------*/
-      .slideshow-sect {
-        margin-inline: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        padding: 2rem 0;
-      }
+/*------------------------------------------------------- BODY -------------------------------------------------------*/
+body {
+  background: transparent;
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
 
-      .slideshow-display-container {
-        position: relative;
-        width: 100%;
-        max-width: 900px;
-        height: 500px;
-        margin-inline: auto;
-        overflow: hidden;
-        border-radius: 12px;
-        transition: 0.25s ease, color 0.25s ease,
-          transform 0.2s ease;
-        filter: drop-shadow(-10px 10px 0px var(--primary));
-        will-change: transform;
-        backface-visibility: hidden;  
-      }
-      .slideshow-display-container:hover{
-        filter: drop-shadow(10px 10px 0px var(--accent));
-        will-change: transform;
-        backface-visibility: hidden;
-      }
-      .slides-div {
-        border-radius: 12px;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transition: 0.25s ease, color 0.25s ease,
-          transform 0.2s ease;
-      }
+/*------------------------------------------------------- HEADER -------------------------------------------------------*/
+.hdr{
+  font-family: 'Cinzel Decorative', serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    180deg,
+    var(--background) 0%,
+    var(--secondary) 100%
+  );
+}
 
-      .mySlides {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: inherit;
-        box-shadow: -10px 10px 0px 0px rgba(156,160,160,1);
-        transition: 0.25s ease, color 0.25s ease,
-          transform 0.2s ease;
-      }
-      
-      .mySlides.active {
-        display: block;
-      }
-      /* ARROWS */
-      .slideshow-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(23, 19, 27, 0.6);
-        color: var(--text);
-        border: 1px solid var(--accent);
-        font-size: 1.5rem;
-        padding: 12px 18px;
-        cursor: pointer;
-        z-index: 2;
-        border-radius: 8px;
-        line-height: 1;
-        transition: 0.25s ease, color 0.25s ease,
-          transform 0.2s ease;
-      }
-      .slideshow-btn:hover {
-        background: var(--background);
-        color: var(--accent);
-        transform: translateY(-50%) scale(1.05);
-      }
-      .slideshow-btn-left {
-        left: 16px;
-      }
-      .slideshow-btn-right {
-        right: 16px;
-      }
+li {
+  list-style: none;
+}
+
+/* NAVIGATION */
+nav {
+  height: fit-content;
+  width: 450px;
+}
+.nav-ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+.nav-ul li{
+  transition: border-radius 0.2s ease;
+}
+.nav-ul li:hover{
+  border-radius: 15px;
+}
+/* LOGO / TITLE */
+.logo-div {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.logo-icon {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.logo-icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px var(--accent))
+    drop-shadow(0 6px 12px var(--shadow));
+}
+.title {
+  margin-inline: auto;
+  width: fit-content;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.title:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px var(--text)) drop-shadow(0 6px 12px var(--shadow));
+}
+
+/* LOGIN */
+.login-div {
+  padding-left: 150px;
+  height: fit-content;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+}
+.login-btn {
+  padding: 10px;
+  height: fit-content;
+  width: fit-content;
+  border: none;
+  border-bottom: 2px solid var(--accent);
+  background: none;
+  color: var(--text);
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+.login-btn:hover {
+  font-size: 1.2em;
+  background: linear-gradient(var(--hover-soft) 0%, var(--accent) 100%);
+}
+
+/* HOVER */
+.hover-y-up {
+  transition: transform 0.2s ease, font-size 0.25s ease, box-shadow 0.25s ease;
+}
+.hover-y-up:hover {
+  font-size: 1.2em;
+  transform: translateY(-2px);
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px 0px var(--shadow);
+}
+/* move right */
+.move-right {
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+}
+.move-right:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px 0px var(--shadow);
+  background: linear-gradient(90deg, var(--hover-soft) 0%, var(--hover-solid));
+}
+/* move left */
+.move-left {
+ 
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+}
+.move-left:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px 0px var(--shadow);
+  background: linear-gradient(270deg, var(--hover-soft) 0%, var(--hover-solid));
+}
+/* ANCHORS */
+a {
+  display: inline-block;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-bottom: 2px solid var(--primary);
+  color: inherit;
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+nav a:hover {
+  background: linear-gradient(
+    180deg,
+    var(--hover-soft) 0%,
+    var(--primary-soft) 100%
+  );
+}
+
+/*------------------------------------------------------- MAIN -------------------------------------------------------*/
+main {
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    var(--secondary) 0%,
+    var(--primary-soft) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*------------------------------------------------------- SLIDESHOW -------------------------------------------------------*/
+.slideshow-sect {
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 2rem 0;
+}
+
+.slideshow-display-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  margin-inline: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: filter 0.25s ease, transform 0.2s ease ;
+  filter: drop-shadow(-10px 10px 0px var(--primary));
+  will-change: transform;
+  backface-visibility: hidden;
+}
+.slideshow-display-container:hover {
+  filter: drop-shadow(10px 10px 0px var(--accent));
+  transform: translateY(-2px);
+  
+  
+}
+.slides-div {
+  border-radius: 12px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+.mySlides {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  box-shadow: -10px 10px 0px 0px rgba(156, 160, 160, 1);
+}
+
+.mySlides.active {
+  display: block;
+}
+
+/* ARROWS */
+.slideshow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(23, 19, 27, 0.6);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  font-size: 1.5rem;
+  padding: 12px 18px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 8px;
+  line-height: 1;
+  transition: 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+.slideshow-btn:hover {
+  background: var(--background);
+  color: var(--accent);
+  transform: translateY(-50%) scale(1.05);
+}
+.slideshow-btn-left {
+  left: 16px;
+}
+.slideshow-btn-right {
+  right: 16px;
+}
+/* ------------------------------------------------------- INFO SECTION ------------------------------------------------------- */
+.home-info-sect {
+  color: var(--secondary);
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 40px;
+  margin-inline: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.home-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.home-info div:hover{
+  border: 4px solid var(--primary-soft); 
+}
+.home-info-left {
+  text-align: start;
+  margin-top: 100px;
+ 
+}
+.home-info-left div{
+  border-left: 2px solid var(--secondary-soft);
+}
+.home-info-right {
+  text-align: end;
+  margin-bottom: 100px;
+}
+.home-info-right div{
+    border-right: 2px solid var(--secondary-soft);
+}
+.home-info-div {
+  width: 50%;
+  margin: 20px;
+}
+.home-info-div p {
+  margin: 10px;
+}
+.home-info-div h3 {
+  margin-inline: auto;
+  width: fit-content;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--secondary-soft);
+}
+
+
+/*------------------------------------------------------- FOOTER -------------------------------------------------------*/
+footer {
+  margin-top: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-top: 4px solid var(--secondary);
+  height: 250px;
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 0.9em;
+}
+footer h3 {
+  font-size: 1.2em;
+}
+.footer-h-top {
+  width: fit-content;
+  border-bottom: 2px solid var(--secondary);
+}
+.footer-h-bottom {
+  width: fit-content;
+  border-top: 2px solid var(--secondary);
+}
+.footer-div h3,
+.footer-div p {
+  margin: 20px;
+}
+.footer-div {
+  width: 320px;
+  height: 160px;
+  border-right: 2px solid var(--secondary-soft);
+  border-left: 2px solid var(--secondary-soft);
+}
+.footer-div:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+  border: 4px solid var(--secondary);
+  background: linear-gradient(180deg, var(--primary-soft), var(--primary));
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px 0px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
+}

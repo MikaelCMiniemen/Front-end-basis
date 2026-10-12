@@ -1,4 +1,4 @@
-    /*------------------------------------------------------- ROOT -------------------------------------------------------*/
+/*------------------------------------------------------- ROOT -------------------------------------------------------*/
 :root {
   --text: rgb(233, 228, 216);
   --background: rgb(23, 19, 27);
@@ -65,7 +65,7 @@ body {
 }
 /* ------------------------------------------------------- HEADER -------------------------------------------------------*/
 .hdr-spec {
-  font-family: "Cinzel Decorative", serif;
+  font-family: 'Cinzel Decorative', serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,13 +91,14 @@ body {
   height: 150px;
   width: auto;
   object-fit: contain;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
   filter: drop-shadow(0 0 0 rgba(177, 140, 89, 0));
 }
 .logo-icon:hover {
   transform: scale(1.1);
-  filter:
-    drop-shadow(0 0 8px var(--accent))
+  filter: drop-shadow(0 0 8px var(--accent))
     drop-shadow(0 6px 12px var(--shadow));
 }
 .title {
@@ -111,9 +112,7 @@ body {
 }
 .title:hover {
   transform: scale(1.1);
-  filter:
-    drop-shadow(0 0 8px var(--text))
-    drop-shadow(0 6px 12px var(--shadow));
+  filter: drop-shadow(0 0 8px var(--text)) drop-shadow(0 6px 12px var(--shadow));
 }
 /*------------------------------------------------------- MAIN -------------------------------------------------------  */
 .main-spec {
@@ -135,7 +134,7 @@ body {
 }
 /*------------------------------------------------------- INFO SECTION -------------------------------------------------------  */
 .spec-info-sect {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   margin-bottom: 40px;
   margin-inline: auto;
   width: 80%;
@@ -188,19 +187,11 @@ body {
 }
 .spec-info-right div:last-child:hover {
   border: 4px solid var(--secondary);
-  background: linear-gradient(
-    90deg,
-    var(--hover-soft),
-    var(--primary-soft)
-  );
+  background: linear-gradient(90deg, var(--hover-soft), var(--primary-soft));
 }
 .spec-info-left div:last-child:hover {
   border: 4px solid var(--secondary);
-  background: linear-gradient(
-    270deg,
-    var(--hover-soft),
-    var(--primary-soft)
-  );
+  background: linear-gradient(270deg, var(--hover-soft), var(--primary-soft));
 }
 /* HOVER */
 .hover-y-up {
