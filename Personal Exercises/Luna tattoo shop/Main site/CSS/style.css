@@ -99,6 +99,10 @@ nav {
 }
 .nav-ul li:hover {
   transform: translateY(-2px);
+  
+}
+.page-focus{
+  background-color: var(--hover-solid);
 }
 
 /* LOGO / TITLE */
@@ -158,10 +162,12 @@ nav {
   font-size: 1rem;
   letter-spacing: 0.1em;
   cursor: pointer;
+  border-radius: 15px 15px 0 0;
   transition: transform 0.1s ease;
 }
 .login-btn:hover {
   transform: translateY(-2px);
+  background-color: var(--hover-solid);
 }
 /* ANCHORS */
 a {
@@ -169,9 +175,11 @@ a {
   text-decoration: none;
   border-bottom: 2px solid var(--primary);
   color: inherit;
+  border-radius: 15px 15px 0 0;
 }
 a:hover{
   cursor: pointer;
+  background-color: var(--hover-solid);
 }
 /*------------------------------------------------------- MAIN -------------------------------------------------------*/
 main {

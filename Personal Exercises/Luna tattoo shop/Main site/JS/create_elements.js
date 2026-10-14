@@ -1,8 +1,8 @@
 // SELECT EVERY MAIN
-const main = document.querySelector('main')
+const main = document.querySelector('main');
 
 // CREATE FOOTER VAR
-const footer = document.createElement('footer')
+const footer = document.createElement('footer');
 footer.innerHTML += `
 
         <div class="footer-div">
@@ -31,12 +31,12 @@ footer.innerHTML += `
           </p>
         </div>
 
-`
+`;
 // APPEND FOOTER TO MAIN
-main.appendChild(footer)
+main.appendChild(footer);
 
 // SELECT HEADER VAR
-const hdr = document.querySelector('header')
+const hdr = document.querySelector('header');
 // CREATE HEADER CONTENT
 hdr.innerHTML += `
 
@@ -51,15 +51,31 @@ hdr.innerHTML += `
       </div>
       <nav>
         <ul class="nav-ul">
-          <li class="nav-link"><a href="#">HOME</a></li>
+          <li class="nav-link"><a class="home-link" href="index.html">HOME</a></li>
           <li class="nav-link">
-            <a href="#">APPOINTMENTS</a>
+            <a class="appointments-link" href="appointments.html">APPOINTMENTS</a>
           </li>
-          <li class="nav-link"><a href="#">CONTACT</a></li>
+          <li class="nav-link"><a class="contact-link" href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
       <div class="login-div">
         <button class="login-btn ">LOG IN</button>
       </div>
-`
+`;
+// SELECT NAV LI ELEMENTS
+const homeLink = document.querySelector('.home-link');
+const appointmentsLink = document.querySelector('.appointments-link');
+const contactLink = document.querySelector('.contact-link');
 
+// SELECT MAINS
+const homeMain = document.querySelector('.main-home');
+const appointmentsMain = document.querySelector('.main-appointments');
+const contactMain = document.querySelector('.main-contact');
+
+if (homeMain) {
+  homeLink.classList.add('page-focus');
+} else if (appointmentsMain) {
+  appointmentsLink.classList.add('page-focus');
+} else if (contactMain) {
+  contactLink.classList.add('page-focus');
+}
