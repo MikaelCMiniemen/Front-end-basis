@@ -79,3 +79,18 @@ if (homeMain) {
 } else if (contactMain) {
   contactLink.classList.add('page-focus');
 }
+
+// SELET LOGIN BTN
+const logInBtn = document.querySelector('.login-btn')
+const logInWindow = document.querySelector('.login-window')
+// ADD LISTENER TO LOGIN BTN
+logInBtn.addEventListener('click', function(){
+  logInWindow.classList.add('active')
+})
+
+//ADD LISTENER TO CLOSE WINDOW
+window.addEventListener('click', function(event){
+  if (event.target == logInWindow) {
+    logInWindow.classList.remove('active')
+  }
+})

@@ -169,6 +169,66 @@ nav {
   transform: translateY(-2px);
   background-color: var(--hover-solid);
 }
+.login-window {
+  display: none;
+  position: fixed;
+  inset: 0;                       /* fills the viewport */
+  background: rgba(0, 0, 0, 0.7); /* dark overlay */
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-window.active {
+  display: flex;
+}
+
+.login-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 50vw;
+  height: 50vh;
+  background: var(--secondary);
+  border: 2px solid var(--accent);
+  border-radius: 15px;
+  gap: 20px;
+}
+.login-input-divs{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-input-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.login-input-div input {
+  border-radius: 5px;
+  border: 2px solid var(--accent);
+}
+.login-title-div{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-logo{
+  height: 200px;
+
+}
+.login-title{
+  font-family: 'Cinzel Decorative', serif;
+  font-size:  1.2rem;
+}
 /* ANCHORS */
 a {
   padding: 12px 20px;
