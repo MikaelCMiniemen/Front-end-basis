@@ -39,15 +39,7 @@ main.appendChild(footer)
 const hdr = document.querySelector('header')
 // CREATE HEADER CONTENT
 hdr.innerHTML += `
-<nav>
-        <ul class="nav-ul">
-          <li class="nav-link"><a class="hover-y-up" href="#">HOME</a></li>
-          <li class="nav-link">
-            <a class="hover-y-up" href="#">APPOINTMENTS</a>
-          </li>
-          <li class="nav-link"><a class="hover-y-up" href="#">CONTACT</a></li>
-        </ul>
-      </nav>
+
 
       <div class="logo-div">
         <img
@@ -57,8 +49,17 @@ hdr.innerHTML += `
         />
         <h1 class="title">LUNATIC TATTOOS</h1>
       </div>
-
+      <nav>
+        <ul class="nav-ul">
+          <li class="nav-link"><a class="hover-y-up" href="#">HOME</a></li>
+          <li class="nav-link">
+            <a class="hover-y-up" href="#">APPOINTMENTS</a>
+          </li>
+          <li class="nav-link"><a class="hover-y-up" href="#">CONTACT</a></li>
+        </ul>
+      </nav>
       <div class="login-div">
         <button class="login-btn hover-y-up">LOG IN</button>
       </div>
 `
+
