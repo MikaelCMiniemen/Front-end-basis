@@ -219,6 +219,7 @@ nav a:hover {
 
 /*------------------------------------------------------- MAIN -------------------------------------------------------*/
 main {
+   border-top: 4px solid var(--accent);
   min-height: 100vh;
   background: linear-gradient(
     180deg,
@@ -232,6 +233,7 @@ main {
 
 /*------------------------------------------------------- SLIDESHOW -------------------------------------------------------*/
 .slideshow-sect {
+  
   margin-inline: auto;
   display: flex;
   justify-content: center;
