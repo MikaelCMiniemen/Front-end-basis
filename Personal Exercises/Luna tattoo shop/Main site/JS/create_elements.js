@@ -51,15 +51,15 @@ hdr.innerHTML += `
       </div>
       <nav>
         <ul class="nav-ul">
-          <li class="nav-link"><a class="hover-y-up" href="#">HOME</a></li>
+          <li class="nav-link"><a href="#">HOME</a></li>
           <li class="nav-link">
-            <a class="hover-y-up" href="#">APPOINTMENTS</a>
+            <a href="#">APPOINTMENTS</a>
           </li>
-          <li class="nav-link"><a class="hover-y-up" href="#">CONTACT</a></li>
+          <li class="nav-link"><a href="#">CONTACT</a></li>
         </ul>
       </nav>
       <div class="login-div">
-        <button class="login-btn hover-y-up">LOG IN</button>
+        <button class="login-btn ">LOG IN</button>
       </div>
 `
 
