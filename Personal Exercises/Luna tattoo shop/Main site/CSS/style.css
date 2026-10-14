@@ -123,8 +123,11 @@ nav {
   transition:
     transform 0.3s ease;
 }
+.logo-div:hover{
+    cursor: pointer;
+}
 .logo-div:hover .logo-icon{
-  cursor: pointer;
+
   transform: scale(1.1);
 }
 .title {

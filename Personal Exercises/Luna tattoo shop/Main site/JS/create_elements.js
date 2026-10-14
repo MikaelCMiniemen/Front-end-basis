@@ -94,3 +94,28 @@ window.addEventListener('click', function(event){
     logInWindow.classList.remove('active')
   }
 })
+
+//ADD HTML TO LOGIN WINDOW
+logInWindow.innerHTML += `
+   <div class="login-card">
+        <div class="login-input-divs">
+        <div class="login-input-div username-div">
+          <p>username:</p>
+          <input type="text" />
+        </div>
+        <div class="login-input-div password-div">
+          <p>password:</p>
+          <input type="text" />
+        </div>
+        
+        </div>
+        <div class="login-title-div">
+        <img
+          class="login-logo"
+          src="IMAGES/Lunatic-tattoos-logo.png"
+          alt="Logo Lunatic Tattoos"
+        />
+        <h1 class="login-title">LUNATIC TATTOOS</h1>
+        </div>
+      </div>
+`
