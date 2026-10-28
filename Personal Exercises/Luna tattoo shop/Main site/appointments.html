@@ -11,26 +11,55 @@
     />
     <link rel="stylesheet" href="CSS/style.css" />
     <script defer src="JS/create_elements.js"></script>
+    <script defer src="JS/form.js"></script>
   </head>
-<body>
-    <div class="login-window">
-     
-    </div>
+  <body>
+    <div class="login-window"></div>
     <header class="hdr"></header>
     <main class="main-appointments">
       <section class="appointments-main-sect">
         <section class="appointments-planner-sect">
-        <form action="">
-          
-
-          
-        </form>
+          <form class="appointment-planner-form">
+            <div class="appointment-input-div appointment-date-div">
+              <label class="appointment-label" for="">When would you like to set an appointment?</label>
+              <input  class="appointment-input-field appointment-date-input" type="date" />
+            </div>
+            <div class="appointment-input-div appointment-time-div">
+              <label class="appointment-label" for=""
+                >At what time would you like to make an appointment?</label
+              >
+              <input  class="appointment-input-field appointment-time-input" type="time" />
+            </div>
+            <div class="appointment-input-div appointment-artist-div">
+              <label class="appointment-label" for="">Which artist would you like to book?</label>
+              <select default=" " class="appointment-artist-select">
+                <option value="invalid">- - - -</option>
+                <option value="Luna">Luna</option>
+                <option value="Greet">Greet</option>
+                <option value="Leen">Leen</option>
+                <option value="Jan">Jan</option>
+              </select>
+            </div>
+            <div class="appointment-input-div appointment-name-div">
+              <label class="appointment-label">What is your name?</label>
+              <input  class="appointment-input-field appointment-name-input" type="text">
+            </div>
+            <div class="appointment-input-div appointment-mail-div">
+              <label class="appointment-label">What is your e-mail adress?</label>
+              <input  class="appointment-input-field appointment-email-input" type="text" >
+            </div>
+            <button  class="appointment-send-btn">Send
+            </button>
+          </form>
+        </section>
+        <section class="appointments-img-sect">
+          <img
+            class="appointments-img"
+            src="./IMAGES/slide2-home.jpg"
+            alt="Image of tattoo"
+          />
+        </section>
       </section>
-      <section class="appointments-img-sect">
-        <img class="appointments-img" src="./IMAGES/slide1-home.jpg" alt="Image of tattoo">
-      </section>
-      </section>
-
     </main>
-</body>
+  </body>
 </html>

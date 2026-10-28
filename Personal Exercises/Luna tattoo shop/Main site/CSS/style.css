@@ -213,9 +213,19 @@ nav {
   flex-direction: row;
   gap: 10px;
 }
-.login-input-div input {
+/* INPUT STYLE */
+input, select {
   border-radius: 5px;
   border: 2px solid var(--accent);
+  background-color: var(--background);
+  color: var(--text);
+
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
 }
 .login-title-div{
   width: 40%;
@@ -336,6 +346,34 @@ main {
   height: 100%;
   width: 50%;
   border-right: 2px solid var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.appointment-planner-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 75%;
+}
+.appointment-input-div{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+
+}
+.invalid-input{
+
+  border-color: red;
+  outline: 2px solid red;
+}
+.appointment-label{
+  border-bottom: 1px solid var(--accent);
 }
 .appointments-img-sect{
   width: 50%;
@@ -344,6 +382,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.appointments-img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+.appointment-send-btn{
+  background-color: var(--secondary);
+  color: var(--text);
+  border: 2px solid var(--accent);
+  font-size: 1.2rem;
+  border-radius: 0.9375rem;
+  width: 6rem;
+  height: 3rem;
 }
 
 
