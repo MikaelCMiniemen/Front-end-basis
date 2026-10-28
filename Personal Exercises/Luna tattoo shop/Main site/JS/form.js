@@ -9,7 +9,7 @@ function setInvalid(el, isInvalid) {
   el.classList.toggle('invalid-input', isInvalid);
 }
 
-function checkEmptyFields() {
+function checkInvalidFields() {
 if (appointmentsMain){
   setInvalid(appointmentDateInput,   appointmentDateInput.value === '');
   setInvalid(appointmentTimeInput,   appointmentTimeInput.value === '');
@@ -21,5 +21,5 @@ if (appointmentsMain){
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  checkEmptyFields();
+  checkInvalidFields();
 });
