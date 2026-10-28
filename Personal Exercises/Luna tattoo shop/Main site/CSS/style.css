@@ -244,7 +244,7 @@ a:hover{
   cursor: pointer;
   background-color: var(--hover-solid);
 }
-/*------------------------------------------------------- MAIN -------------------------------------------------------*/
+/*------------------------------------------------------- MAIN - HOME -------------------------------------------------------*/
 main {
   width: 100%;
   background-color: var(--secondary);
@@ -320,6 +320,32 @@ main {
   padding-bottom: 15px;
   border-bottom: 2px solid var(--primary);
 }
+
+/*------------------------------------------------------- MAIN - APPOINTMENTS -------------------------------------------------------*/
+.appointments-main-sect{
+  background-color: #000000;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+.appointments-planner-sect{
+  background-color: var(--background);
+  height: 100%;
+  width: 50%;
+  border-right: 2px solid var(--accent);
+}
+.appointments-img-sect{
+  width: 50%;
+  height: 100%;
+  border-left: 2px solid var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /*------------------------------------------------------- FOOTER -------------------------------------------------------*/
 footer {
