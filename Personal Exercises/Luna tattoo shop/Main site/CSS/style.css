@@ -2,6 +2,7 @@
 :root {
   --text: rgb(233, 228, 216);
   --background: rgb(23, 19, 27);
+  --postcard-bg:  rgb(26, 21, 32);
 
   --primary: rgb(156, 160, 160);
   --primary-soft: rgba(156, 160, 160, 0.2);
@@ -193,7 +194,7 @@ nav {
   flex-direction: row;
   width: 50vw;
   height: 50vh;
-  background: var(--secondary);
+  background: var(--postcard-bg);
   border: 2px solid var(--accent);
   border-radius: 15px;
   gap: 20px;
@@ -430,8 +431,37 @@ main {
   background-color: var(--hover-solid);
   cursor: pointer;
 }
+/*------------------------------------------------------- MAIN-CONTACT -------------------------------------------------------*/
 
+.postcard-sect {
+  width: 100%;
+  height: 100vh;
+  background-image: 
+    linear-gradient(rgba(23, 19, 27, 0.85), rgba(23, 19, 27, 0.85)), 
+    url(../IMAGES/contact-background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.postcard {
+  height: 25em; /* Increased height slightly to fit a form */
+  width: 50em;  /* Increased width */
+  
+  /* 3. Use your new postcard color from :root */
+  background: var(--postcard-bg);
+  
+  /* 4. Add the premium border and shadow */
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9);
+  
+  /* Remove the old filter */
+  /* filter: brightness(5); */
+}
 /*------------------------------------------------------- FOOTER -------------------------------------------------------*/
 footer {
   margin-top: auto;
