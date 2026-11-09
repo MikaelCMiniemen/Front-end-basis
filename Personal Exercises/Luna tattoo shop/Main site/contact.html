@@ -4,27 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lunatic Tattoos - Contact</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./IMAGES/Lunatic-tattoos-logo.png">
     <!-- HEADER FONT -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap"
     />
     <link rel="stylesheet" href="CSS/style.css" />
+    <!-- FONT AWESOME -->
+      <script
+      src="https://kit.fontawesome.com/dab7164888.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="JS/create_elements.js"></script>
   </head>
-<body>
-    <div class="login-window">
-     
-    </div>
+  <body>
+    <div class="login-window"></div>
     <header class="hdr"></header>
     <main class="main-contact">
       <section class="postcard-sect">
         <form class="postcard">
-          
-        </form>
+          <div class="postcard-left">
+            <h2 class="postcard-title">Drop a line</h2>
 
+            <div class="postcard-input-group">
+              <label class="postcard-label">Name</label>
+              <input
+                class="postcard-input"
+                type="text"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            <div class="postcard-input-group">
+              <label class="postcard-label">Email</label>
+              <input
+                class="postcard-input"
+                type="email"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+
+            <div class="postcard-input-group">
+              <label class="postcard-label">Message</label>
+              <textarea
+                class="postcard-input"
+                rows="3"
+                placeholder="Tell me about your idea, placement, or question..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="postcard-submit-btn">
+              Send Message
+            </button>
+          </div>
+
+          <div class="postcard-right">
+            <i class="postcard-stamp fa-regular fa-envelope"></i>
+            <h3 class="postcard-brand">LUNATIC<br />TATTOOS</h3>
+            <div class="postcard-details">
+              <p>lunatic.tattoos@gmail.com</p>
+              <p>Leuven, Belgium</p>
+              <p>@LUNATICTATTOOS</p>
+            </div>
+          </div>
+        </form>
       </section>
-        
     </main>
-</body>
+  </body>
 </html>
