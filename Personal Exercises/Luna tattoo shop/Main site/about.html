@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lunatic Tattoos - About</title>
     <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="./IMAGES/Lunatic-tattoos-logo.png">
+    <link rel="icon" type="image/png" href="./IMAGES/Favicon.png">
     <!-- HEADER FONT -->
     <link
       rel="stylesheet"
@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="CSS/style.css" />
     <!-- FONT AWESOME -->
-      <script
+    <script
       src="https://kit.fontawesome.com/dab7164888.js"
       crossorigin="anonymous"
     ></script>
@@ -22,4 +22,105 @@
   <body>
     <div class="login-window"></div>
     <header class="hdr"></header>
+    
+    <main class="main-about">
+      <div class="page-title-div">
+        <h2 class="page-title">About Luna</h2>
+      </div>
+
+      <!-- 1. THE ARTIST -->
+      <section class="about-hero">
+        <figure class="about-image-container">
+          <!-- Replace with an actual portrait or a very cool tattoo shot -->
+          <img 
+            class="about-img" 
+            src="./IMAGES/slide3-home.jpg" 
+            alt="Luna working in the studio" 
+          />
+          <figcaption class="about-caption">Luna, Founder & Lead Artist</figcaption>
+        </figure>
+        
+        <article class="about-bio">
+          <h3 class="about-h3">Meet the Artist</h3>
+          <p>
+            Hi, I'm Luna. I'm a fine-line and blackwork tattoo artist based in Leuven. 
+            I believe that tattoos are a way to reclaim your body and tell your own story. 
+            My style is heavily inspired by the moon, nature, and all things beautifully 
+            strange.
+          </p>
+          <p>
+            Whether you're getting your first tattoo or adding to a collection, I aim to 
+            make the process as comfortable, safe, and collaborative as possible. Every piece 
+            is custom-designed to flow with your anatomy and reflect your unique personality.
+          </p>
+        </article>
+      </section>
+
+      <!-- 2. SPECIALTIES (CSS GRID) -->
+      <section class="about-specialties">
+        <h3 class="about-h3">My Specialties</h3>
+        <div class="specialties-grid">
+          <article class="specialty-card">
+            <h4>Fine-Line</h4>
+            <p>Delicate, intricate designs with a focus on precision, elegance, and soft shading.</p>
+          </article>
+          
+          <article class="specialty-card">
+            <h4>Blackwork</h4>
+            <p>Bold, high-contrast pieces using deep black ink, geometric shapes, and heavy textures.</p>
+          </article>
+          
+          <article class="specialty-card">
+            <h4>Custom Designs</h4>
+            <p>Unique, one-of-a-kind designs created entirely around your ideas and stories.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. THE PROCESS -->
+      <section class="about-process">
+        <h3 class="about-h3">The Process</h3>
+        <ol class="process-list">
+          <li>
+            <strong>1. The Consultation</strong>
+            <p>We discuss your idea, placement, and budget to make sure we are a perfect match.</p>
+          </li>
+          <li>
+            <strong>2. The Design</strong>
+            <p>I create a custom sketch based on our conversation. We refine it until you absolutely love it.</p>
+          </li>
+          <li>
+            <strong>3. The Session</strong>
+            <p>We bring the art to life in a clean, sterile, and welcoming studio environment.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 4. FAQ (NATIVE HTML ACCORDION) -->
+      <section class="about-faq">
+        <h3 class="about-h3">Frequently Asked Questions</h3>
+        
+        <details class="faq-item">
+          <summary>Does getting a tattoo hurt?</summary>
+          <p>Yes, it can be uncomfortable, but it is highly manageable. Most clients find it feels like a constant scratching sensation. We take breaks whenever you need.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How much does a tattoo cost?</summary>
+          <p>Pricing depends on the size, placement, and complexity of the design. My hourly rate is [€XX], and a deposit is required to secure your booking.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do you do cover-ups?</summary>
+          <p>Yes! Cover-ups are a great way to transform old tattoos. Please send a clear, well-lit photo of the existing tattoo when you book a consultation.</p>
+        </details>
+        
+        <details class="faq-item">
+          <summary>Are your inks vegan and cruelty-free?</summary>
+          <p>Absolutely. I only use high-quality, vegan-friendly inks and single-use, sterile needles for every session.</p>
+        </details>
+      </section>
+
+    </main>
   </body>
+</html>

@@ -51,11 +51,23 @@ hdr.innerHTML += `
       </div>
       <nav>
         <ul class="nav-ul">
-          <li class="nav-link"><a class="home-link" href="index.html">HOME</a></li>
+
+          <li class="nav-link">
+          <a class="home-link" href="index.html">HOME</a>
+          </li>
+
           <li class="nav-link">
             <a class="appointments-link" href="appointments.html">APPOINTMENTS</a>
           </li>
-          <li class="nav-link"><a class="contact-link" href="contact.html">CONTACT</a></li>
+
+          <li class="nav-link">
+          <a class="contact-link" href="contact.html">CONTACT</a>
+          </li>
+
+          <li class="nav-link">
+          <a class="about-link" href="about.html">ABOUT</a>
+          </li>
+
         </ul>
       </nav>
       <div class="login-div">
@@ -66,18 +78,21 @@ hdr.innerHTML += `
 const homeLink = document.querySelector('.home-link');
 const appointmentsLink = document.querySelector('.appointments-link');
 const contactLink = document.querySelector('.contact-link');
+const aboutLink = document.querySelector('.about-link')
 
 // SELECT MAINS
 const homeMain = document.querySelector('.main-home');
 const appointmentsMain = document.querySelector('.main-appointments');
 const contactMain = document.querySelector('.main-contact');
-
+const aboutMain = document.querySelector('.main-about')
 if (homeMain) {
   homeLink.classList.add('page-focus');
 } else if (appointmentsMain) {
   appointmentsLink.classList.add('page-focus');
 } else if (contactMain) {
   contactLink.classList.add('page-focus');
+} else if (aboutMain) {
+  aboutLink.classList.add('page-focus')
 }
 
 // SELET LOGIN BTN
@@ -119,3 +134,22 @@ logInWindow.innerHTML += `
         </div>
       </div>
 `
+
+// SELECT LOGO DIV AS VAR
+const logoDiv = document.querySelector('.logo-div')
+
+// ADD LISTENER TO LOGO DIV TO GO TO index.html
+logoDiv.addEventListener('click', function(){
+  window.location = 'index.html'
+})
+
+// SELECT sendMessageBtn as var
+const sendMessageBtn = document.querySelector('postcard-submit-btn')
+
+// SELECT messageWindow as var
+const messageWindow = document.querySelector('.message-window')
+
+// Add listener to sendMessageBtn
+sendMessageBtn.addEventListener('click', function(){
+  messageWindow.add.classList('active')
+})
